@@ -16,10 +16,9 @@ public class Task {
     private String taskDescription;
     private LocalDateTime deadline;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @NotFound(action = NotFoundAction.IGNORE)
+    @ManyToOne
     @JoinColumn(
-            nullable = true,
+            nullable = false,
             name = "category_id"
     )
     private Category category;

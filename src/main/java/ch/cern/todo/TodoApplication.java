@@ -31,29 +31,28 @@ public class TodoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		AppUser appUser = new AppUser();
-		appUser.setId(1L);
-		appUser.setPassword("password");
-		appUser.setUsername("Monika");
-
-		Category category = new Category();
-		category.setId(1L);
-		category.setCategoryName("WORK");
-		category.setCategoryDescription("tasks from my boss");
-
-		Task task = new Task();
-		task.setId(1L);
-		task.setTaskName("1 task");
-		task.setTaskDescription("desc");
-		task.setDeadline(LocalDateTime.now());
-		task.setCategory(category);
-
-		appUser.getTodoList().add(task);
-
-		appUserRepository.save(appUser);
-		categoryRepository.save(category);
-		//TimeUnit.SECONDS.sleep(5);
-		taskRepository.save(task);
+//		AppUser appUser = new AppUser();
+//		appUser.setId(1L);
+//		appUser.setPassword("password");
+//		appUser.setUsername("Monika");
+//
+//		Category category = new Category();
+//		category.setId(1L);
+//		category.setCategoryName("WORK");
+//		category.setCategoryDescription("tasks from my boss");
+//
+//		Task task = new Task();
+//		task.setId(1L);
+//		task.setTaskName("1 task");
+//		task.setTaskDescription("desc");
+//		task.setDeadline(LocalDateTime.now());
+//		task.setCategory(category);
+//
+//
+//		appUserRepository.save(appUser);
+//		categoryRepository.save(category);
+//
+//		taskRepository.save(task);
 
 	}
 }
